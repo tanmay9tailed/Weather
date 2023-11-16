@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:ital@1&family=Rajdhani&family=Rubik+Iso&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+        <div class="top">
+            <i class='bx bx-map' ></i><input type="text" id="searchLocation" placeholder="Enter Your Location"><button><i class='bx bx-search'></i></button>
+        </div>
+        <div class="mid">
+            <img src="images/cloud.png" alt="">
+            <h1 id="temp">16<sup>o</sup>C</h1>
+            <h2 id="description">Clear Sky</h2>
+        </div>
+        <div class="bottom">
+            <div class="humidity">
+                <i class='bx bx-water'></i>
+                <div class="hum">
+                    <h1 id="humidity">55%</h1>
+                    <h2>Humidity</h2>
+                </div>
+            </div>
+            <div class="wind">
+                <i class='bx bx-wind'></i>
+                <div class="win">
+                    <h1 id="wind">10 Km/hr</h1>
+                    <h2>Wind Speed</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

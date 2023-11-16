@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background: url(images/richard-umwNwMBMwwg-unsplash.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+}
+h1,h2{
+    margin: 0;
+}
+.container{
+    height:70vh ;
+    width: 31vw;
+    background-color: rgba(255,255,255,0.18);
+    border: 1.5px solid rgba(255,255,255,0.4);
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.4);
+}
+.top{
+    width: 85%;
+    margin: auto;
+    position: relative;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 2px 23px 2px 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.top button{
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+    cursor: pointer;
+}
+.mid{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 25px;
+/* background-color: brown; */
+}
+.mid img{
+    height: 100px;
+}
+.mid h1{
+    margin: 0;
+    margin-top: 8px;
+    font-size: 35px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+.mid h2{
+    margin: 0;
+    font-size: 17px;
+    margin-top: 2px;
+    letter-spacing: 1px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+.humidity,.wind{
+    display: flex;
+}
+.humidity i,.wind i{
+  font-size: 25px;
+}
+.hum,.win{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6px;
+}
+.hum h1,.win h1{
+font-size:12px ;
+}
+.hum h2,.win h2{
+    font-size:8px ;
+    }
+
