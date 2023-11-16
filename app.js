@@ -1,16 +1,24 @@
 const ApiKey = "6b52cc980762b1c663f3f0acbbe566e9";
+const temperature = document.querySelector("#temp");
+const windSpeed = document.querySelector("#wind");
+const humidity = document.querySelector("#humidity");
+const image = document.querySelector("img");
+const description = document.querySelector("#description");
 
 const updateWeather = (city) => {
-    if (city === "") return;
+    if (city === "") {
+    image.src="images/404.png"
+    temperature.innerHTML = ``;
+    windSpeed.innerHTML =  ``;
+    humidity.innerHTML =``;
+    description.innerHTML = ``;       
+
+    }
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${ApiKey}`)
         .then(response => response.json())
         .then(json => {
-            const temperature = document.querySelector("#temp");
-            const windSpeed = document.querySelector("#wind");
-            const humidity = document.querySelector("#humidity");
-            const image = document.querySelector("img");
-            const description = document.querySelector("#description");
+           
 
             switch(json.weather[0].main){
                 case 'Clear':image.src="images/clear.png";break;
