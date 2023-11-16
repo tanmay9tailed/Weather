@@ -23,8 +23,8 @@ const updateWeather = (city) => {
             }
 
             temperature.innerHTML = `${parseInt(json.main.temp)}<span><sup>o</sup>C</span>`;
-            windSpeed.innerHTML = `${json.main.humidity}%`;
-            humidity.innerHTML = `${parseInt(json.wind.speed)}km/hr`;
+            windSpeed.innerHTML =  `${parseInt(json.wind.speed)}km/hr`;
+            humidity.innerHTML =`${json.main.humidity}%`;
             description.innerHTML = `${json.weather[0].description}`;
         });
 };
