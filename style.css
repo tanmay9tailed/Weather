@@ -112,4 +112,15 @@ font-size:20px ;
 .hum h2,.win h2{
     font-size:13px ;
     }
-
+    @media (max-width: 1200px) {
+        .container{
+         width: 40%;
+         height: 75%;
+       }
+   }
+    @media (max-width: 600px) {
+         .container{
+          width: 90%;
+          height: 80%;
+        }
+    }

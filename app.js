@@ -66,3 +66,8 @@ document.addEventListener("keydown", function(event) {
 //  const city = document.querySelector("input").value;
 //  updateWeather(city);
 // });
+VanillaTilt.init(document.querySelector(".tilt"), {
+  max: 30,
+  speed: 500
+});
+VanillaTilt.init(document.querySelectorAll(".tilt"));
